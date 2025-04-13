@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebNotesApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="top-menu">
+            <button id="new-note-btn">New Note</button>
+            <button id="save-btn">Save</button>
+            <button id="save-as-btn" disabled>Save As</button>
+            <button id="settings-btn">Settings</button>
+        </div>
+        <div class="content">
+            <div id="notes-explorer-container">
+                <div id="folders-pane">
+                    <div id="folders-header">Folders</div>
+                    <ul id="folders-list"></ul>
+                </div>
+                <div class="pane-separator"></div>
+                <div id="notes-list-container">
+                    <div id="notes-list-header">Notes List</div>
+                    <ul id="notes-list"></ul>
+                </div>
+            </div>
+            <div id="main-editor-pane">
+                <div id="editor-header">Notes Editor: </div>
+                <textarea id="editor"></textarea>
+                <div id="editor-status"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLRIPbJIUYPRJU6UGznKlQlQTOTifnHNuFwyhRYQBYbjz+AZg0ooMe6nlkl9Cw5cxyJm3+RYdg==" crossorigin="anonymous" referrerpolicy="noreferrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
